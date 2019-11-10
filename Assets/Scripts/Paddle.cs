@@ -25,8 +25,9 @@ public class Paddle : MonoBehaviour
 		transform.position = new Vector3(transform.position.x + (x * speed * Time.deltaTime), transform.position.y, transform.position.z);
     }
 
-    void Reset() {
+    public void Reset() {
         transform.position = startPosition;
+        transform.localScale = Vector3.one;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,7 +36,7 @@ public class Paddle : MonoBehaviour
         if (collision.transform.name == "Ball")
         {
             Vector3 localPosition = transform.InverseTransformPoint(collision.GetContact(0).point);
-            float newForce = (localPosition.x * 10) + Mathf.Abs(Input.GetAxis("Horizontal")) * 40;
+            float newForce = (localPosition.x * 50);
             collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector3(newForce, 0, 0));
         }
     }

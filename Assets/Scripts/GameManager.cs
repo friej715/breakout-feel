@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject brickPrefab;
-    public Ball ballBehavior;
+    private Ball ballBehavior;
+    private Paddle paddleBehavior;
 
     private Transform barrierLeft;
     private Transform barrierRight;
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ballBehavior = GameObject.Find("Ball").GetComponent<Ball>();
+        paddleBehavior = GameObject.Find("Paddle").GetComponent<Paddle>();
         Reset();
     }
 
@@ -44,8 +47,8 @@ public class GameManager : MonoBehaviour
     void Reset() {
         curState = GameState.Start;
         
-        ballBehavior = GameObject.Find("Ball").GetComponent<Ball>();
         ballBehavior.Reset();
+        paddleBehavior.Reset();
 
         GameObject[] oldBricks = GameObject.FindGameObjectsWithTag("Brick");
         foreach (GameObject b in oldBricks)
