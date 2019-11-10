@@ -29,7 +29,7 @@ public class Paddle : MonoBehaviour
         mySource.pitch = Remap(Mathf.Abs(x), 0, 1, 1, 3);
         transform.position = new Vector3(transform.position.x + (x * speed * Time.deltaTime), transform.position.y, transform.position.z);
 
-        Vector3 temporaryScale = transform.localScale;
+        Vector3 temporaryScale = Vector3.one;
         temporaryScale.y = Remap(Mathf.Abs(x), 0, 1, 1, .75f);
         transform.localScale = temporaryScale;
     }
