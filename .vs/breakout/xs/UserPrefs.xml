@@ -2,14 +2,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Ball.cs">
     <Files>
       <File FileName="Assets/Paddle.cs" Line="44" Column="1" />
-      <File FileName="Assets/GameManager.cs" Line="40" Column="36" />
-      <File FileName="Assets/Brick.cs" Line="22" Column="43" />
+      <File FileName="Assets/GameManager.cs" />
+      <File FileName="Assets/Brick.cs" />
       <File FileName="Assets/Ball.cs" Line="25" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="255bd156-7781-4695-9102-1bd58bd2f9bc" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="42922963-7fc8-4db2-89f5-6057189a9cc6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
