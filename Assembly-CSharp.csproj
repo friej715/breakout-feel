@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Brick.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
+    <None Include="Assets\SimpleFX\Materials\UnlitVertexColour_Alpha.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/janefriedhoff/ITP_class/breakout/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

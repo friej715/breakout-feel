@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{AEB5649F-48E0-7217-34E4-D400CF092D0E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Ball.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ball.cs">
     <Files>
       <File FileName="Assets/Paddle.cs" Line="44" Column="1" />
       <File FileName="Assets/GameManager.cs" />
       <File FileName="Assets/Brick.cs" />
       <File FileName="Assets/Ball.cs" Line="25" Column="17" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="30" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
