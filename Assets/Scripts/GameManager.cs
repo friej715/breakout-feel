@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         
         ballBehavior = GameObject.Find("Ball").GetComponent<Ball>();
         ballBehavior.Reset();
-
+        
         GameObject[] oldBricks = GameObject.FindGameObjectsWithTag("Brick");
         foreach (GameObject b in oldBricks)
         {
@@ -73,7 +73,6 @@ public class GameManager : MonoBehaviour
                 float y = barrierTop.position.y - (prefabHeight * j) - (prefabHeight / 2) - .5f;
                 Instantiate(brickPrefab, new Vector3(x, y, 0), Quaternion.identity);
             }
-            
 
         }
         
@@ -83,6 +82,7 @@ public class GameManager : MonoBehaviour
     {
         if (collision.gameObject.name == "Ball")
         {
+            ballBehavior.PlayFailSound();
             Reset();
         }
     }
